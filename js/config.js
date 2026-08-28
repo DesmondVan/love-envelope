@@ -78,18 +78,18 @@ const CONFIG = {
   // 📸 Thêm bao nhiêu ảnh cũng được!
   // Đặt ảnh vào assets/images/ và thêm vào danh sách bên dưới.
   gallery: [
-    { src: "assets/images/gallery1.jpg", caption: "📝 Thay caption ảnh 1 ở đây" },
-    { src: "assets/images/gallery2.jpg", caption: "📝 Thay caption ảnh 2 ở đây" },
-    { src: "assets/images/gallery3.jpg", caption: "📝 Thay caption ảnh 3 ở đây" },
-    { src: "assets/images/gallery4.jpg", caption: "📝 Thay caption ảnh 4 ở đây" },
-    { src: "assets/images/gallery5.jpg", caption: "📝 Thay caption ảnh 5 ở đây" },
-    { src: "assets/images/gallery6.jpg", caption: "📝 Thay caption ảnh 6 ở đây" },
-    { src: "assets/images/gallery7.jpg", caption: "📝 Thay caption ảnh 7 ở đây" },
-    { src: "assets/images/gallery8.jpg", caption: "📝 Thay caption ảnh 8 ở đây" },
-    { src: "assets/images/gallery9.jpg", caption: "📝 Thay caption ảnh 9 ở đây" },
-    { src: "assets/images/gallery10.jpg", caption: "📝 Thay caption ảnh 10 ở đây" },
-    { src: "assets/images/gallery11.jpg", caption: "📝 Thay caption ảnh 11 ở đây" },
-    { src: "assets/images/gallery12.jpg", caption: "📝 Thay caption ảnh 12 ở đây" },
+    { src: "assets/images/gallery1.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery2.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery3.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery4.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery5.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery6.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery7.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery8.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery9.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery10.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery11.jpg", caption: "Yêu emmmm" },
+    { src: "assets/images/gallery12.jpg", caption: "Yêu emmmm" },
 
   ],
 
