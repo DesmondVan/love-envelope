@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Một trang web đặc biệt dành riêng cho em 💕">
+  <meta name="theme-color" content="#FFB3D9">
+  <title>💖 Dành Riêng Cho Em</title>
+
+  <!-- Favicons -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- 🎨 Animated Gradient Background              -->
+  <!-- ══════════════════════════════════════════════ -->
+  <div id="bg-gradient"></div>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- ✨ Global Particles Canvas                    -->
+  <!-- ══════════════════════════════════════════════ -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- 🎵 Music Button (góc phải trên)              -->
+  <!-- ══════════════════════════════════════════════ -->
+  <button id="music-btn" aria-label="Bật/Tắt nhạc" title="Bật/Tắt nhạc">🎵</button>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- MÀN 1: 🔐 MẬT KHẨU                          -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="scene-password" class="scene active">
+    <div class="glass-card">
+      <div id="lock-icon" class="lock-icon">🔒</div>
+      <h1 class="title-lg">Website này có mật khẩu nè~</h1>
+      <p class="subtitle">Chỉ dành cho một người thôi 💕</p>
+      
+      <div class="input-group">
+        <input 
+          type="text" 
+          id="password-input" 
+          class="input-field" 
+          placeholder="Nhập mật khẩu..."
+          autocomplete="off"
+          autofocus
+        >
+        <button id="password-btn" class="btn-primary pulse">
+          💖 Mở Khóa Trái Tim 💖
+        </button>
+      </div>
+
+      <p id="password-error" class="error-msg"></p>
+      <p class="hint-text" id="password-hint"></p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- MÀN 2: 💌 PHONG BÌ + THẢ THÍNH              -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="scene-envelope" class="scene">
+    <div class="envelope-container">
+      <p class="subtitle envelope-prompt">Bấm vào phong bì đi em~ 💌</p>
+      
+      <div class="envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body"></div>
+        <div class="letter-container">💌</div>
+      </div>
+    </div>
+
+    <div class="pickup-card" id="pickup-card">
+      <p class="pickup-text" id="pickup-text"></p>
+      
+      <div class="pickup-dots" id="pickup-dots">
+        <!-- Dots are generated dynamically based on pickupLines count -->
+      </div>
+      
+      <div class="pickup-nav">
+        <button class="pickup-prev" aria-label="Câu trước">←</button>
+        <button class="pickup-next" aria-label="Câu tiếp">→</button>
+      </div>
+
+      <button id="envelope-continue-btn" class="btn-primary mt-3">
+        Anh muốn kể em nghe một chuyện 📖
+      </button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- MÀN 3: ✍️ THƯ TÌNH TYPEWRITER                -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="scene-typewriter" class="scene">
+    <!-- Chapters are built dynamically by typewriter.js -->
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- MÀN 4: 📸 ALBUM ẢNH CAROUSEL                -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="scene-gallery" class="scene">
+    <h2 class="title-lg">Những khoảnh khắc của chúng mình 📸</h2>
+
+    <div class="carousel-container">
+      <div class="carousel-arrows">
+        <button class="carousel-arrow carousel-arrow-prev" aria-label="Ảnh trước">←</button>
+        <button class="carousel-arrow carousel-arrow-next" aria-label="Ảnh tiếp">→</button>
+      </div>
+      <div class="carousel-track" id="carousel-track">
+        <!-- Slides are built dynamically by carousel.js -->
+      </div>
+    </div>
+
+    <p class="carousel-caption" id="carousel-caption"></p>
+
+    <div class="carousel-dots" id="carousel-dots">
+      <!-- Dots are built dynamically by carousel.js -->
+    </div>
+
+    <button id="gallery-continue-btn" class="btn-primary mt-3">
+      Anh muốn hỏi em một câu... 🥺
+    </button>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- MÀN 5: ❓ YES / NO                           -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="scene-yesno" class="scene">
+    <h2 class="yesno-question" id="yesno-question"></h2>
+
+    <div class="yesno-container">
+      <button id="btn-yes" class="btn-yes">💖 Có</button>
+      <button id="btn-no" class="btn-no">Không</button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- MÀN 6: 🎆 CELEBRATION                        -->
+  <!-- ══════════════════════════════════════════════ -->
+  <section id="scene-celebration" class="scene">
+    <h1 class="celebration-title" id="celebration-title"></h1>
+    <p class="celebration-subtitle" id="celebration-subtitle"></p>
+
+    <div class="celebration-counter">
+      <p class="counter-label">Chúng mình đã bên nhau được</p>
+      <span class="counter-value" id="counter-value">0</span>
+      <span class="counter-unit"> ngày rồi nè 💕</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ -->
+  <!-- 📜 Scripts (load order matters!)              -->
+  <!-- ══════════════════════════════════════════════ -->
+  <script src="js/config.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/music.js"></script>
+  <script src="js/password.js"></script>
+  <script src="js/envelope.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/carousel.js"></script>
+  <script src="js/yesno.js"></script>
+  <script src="js/celebration.js"></script>
+  <script src="js/app.js"></script>
+
+
+</body>
+</html>
